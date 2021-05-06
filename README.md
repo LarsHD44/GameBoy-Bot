@@ -1,2 +1,4 @@
 # GameBoy-Bot
- Der GameBoy-Bot by Lars_HD44
+ The official Github-Repo of the Gameboy-Bot by Lars_HD44
+ 
+#Commands
