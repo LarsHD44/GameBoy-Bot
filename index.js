@@ -1,12 +1,12 @@
 const Discord = require('discord.js')
 const guild = require('discord.js')
-const prefix = "!!";
+const prefix = "GB ";
 
 var client = new Discord.Client()
 
 
 client.on('ready', () => {
-    console.log(`Eingeloggt als ${client.user.tag}...`)
+    console.log(`Logged in as: ${client.user.tag}...`)
     client.user.setActivity(`with servers`);
 })
 
@@ -20,7 +20,7 @@ client.on('guildMemberAdd', member => {
   });
 
 client.on('message', message => {
-    if (message.content === '+myavatar') {
+    if (message.content === 'GB myavatar') {
         message.channel.send('This is your Avatar:', message.author.avatarURL);
     }
 });
@@ -47,7 +47,7 @@ const help = new Discord.RichEmbed()
 
 client.on('message', message => {
     if (message.content === 'GB help') {
-        channel.send(help);
+        message.channel.send(help);
     }
 });  
 
